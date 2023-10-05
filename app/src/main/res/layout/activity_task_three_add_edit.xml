@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tasks.TaskThreeAddEdit">
+
+    <ImageView
+        android:id="@+id/login_bg"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/top_background1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:scaleType="fitXY"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="30sp"
+        >
+        <ImageView
+            android:id="@+id/img_btn_back"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:clickable="true"
+            android:src="@drawable/arrow_back"
+            android:padding="0dp"
+            android:focusable="true"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/task_three_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_new"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="150dp">
+
+            <!--            material design text Fields-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="@string/full_name"
+                android:textColorHint="@color/hint_color"
+                app:boxStrokeColor="@color/input_border_color"
+                app:boxStrokeWidthFocused="2dp"
+                app:hintTextColor="@color/blue_dark"
+                app:startIconDrawable="@drawable/ic_user"
+                app:startIconTint="@color/blue_dark"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/blue_dark"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:textColor="@color/blue_dark"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="@string/father_name"
+                android:textColorHint="@color/hint_color"
+                app:boxStrokeColor="@color/input_border_color"
+                app:boxStrokeWidthFocused="2dp"
+                app:hintTextColor="@color/hint_color"
+                app:startIconDrawable="@drawable/ic_user"
+                app:startIconTint="@color/blue_dark"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/blue_dark"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_fName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:textColor="@color/blue_dark"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/genders_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/spinner_bg"
+                android:dropDownSelector="@color/white"
+                />
+            <Button
+                android:id="@+id/btn_add_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add"
+                android:layout_marginTop="25dp"
+                android:paddingVertical="13dp"
+                android:elevation="5dp"
+                android:textSize="16sp"
+                android:backgroundTint="@color/blue_dark"
+                android:textColor="@color/white"
+                android:transitionName="transition_login"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

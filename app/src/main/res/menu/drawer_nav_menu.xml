@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/task_one"
+        android:title="Task 1"
+        android:icon="@drawable/ic_check"/>
+
+    <item android:id="@+id/task_two"
+        android:title="Task 2"
+        android:icon="@drawable/ic_check"/>
+
+</menu>

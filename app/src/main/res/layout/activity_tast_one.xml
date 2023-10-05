@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_blue"
+    android:padding="20dp"
+    tools:context=".tasks.TaskOne">
+
+    <TextView
+        android:id="@+id/main_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/task_one_heading"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        />
+
+
+<!--    <ListView-->
+<!--        android:id="@+id/student_list"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_below="@+id/main_heading"-->
+<!--        />-->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_heading"
+        tools:listitem="@layout/rv_student_row"
+
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:tint="@android:color/black"
+        android:contentDescription="@string/add_by_dialog"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        app:tint="@android:color/black"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/add_by_new_activity"
+
+        />
+
+
+
+
+</RelativeLayout>

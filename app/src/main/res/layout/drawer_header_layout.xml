@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="176dp"
+    android:padding="30dp"
+    android:background="@color/blue_dark"
+    android:gravity="bottom"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="logics lab"
+        android:textAllCaps="true"
+        android:textSize="28sp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="logicslab@gmail.com"
+        android:textSize="16sp"
+        android:textColor="@color/white_hint"
+
+      />
+
+
+
+</LinearLayout>
