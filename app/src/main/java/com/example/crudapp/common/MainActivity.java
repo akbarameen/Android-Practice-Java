@@ -9,13 +9,14 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.crudapp.R;
+import com.example.crudapp.taskFive.TaskFiveActivity;
 import com.example.crudapp.taskFour.TaskFourActivity;
 import com.example.crudapp.tasks.TaskOne;
 import com.example.crudapp.tasks.TaskThree;
 import com.example.crudapp.tasks.TaskTwo;
 
 public class MainActivity extends AppCompatActivity {
-Button taskOne, taskTwo, taskThree, taskFour;
+Button taskOne, taskTwo, taskThree, taskFour, taskFive;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -27,6 +28,8 @@ Button taskOne, taskTwo, taskThree, taskFour;
         taskTwo = findViewById(R.id.taskTwo);
         taskThree = findViewById(R.id.taskThree);
         taskFour = findViewById(R.id.taskFour);
+        taskFour = findViewById(R.id.taskFour);
+        taskFive = findViewById(R.id.taskFive);
 
         taskOne.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +58,13 @@ Button taskOne, taskTwo, taskThree, taskFour;
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, TaskFourActivity.class);
+                startActivity(intent);
+            }
+        });
+        taskFive.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, TaskFiveActivity.class);
                 startActivity(intent);
             }
         });
