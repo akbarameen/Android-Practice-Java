@@ -7,4 +7,5 @@
     <color name="hint_color">#494A4A</color>
     <color name="blue_dark">#265ED7</color>
     <color name="blue_light">#3E79FA</color>
+    <color name="red">#F44336</color>
 </resources>
